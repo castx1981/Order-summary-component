@@ -15,6 +15,9 @@
         fontFamily: {
           'sans': ['"Red Hat Display"', 'sans-serif']
         },
+        screens: {
+          'mobile': '375px',
+        },
         extend: {
           colors: {
             'pale-blue': 'hsl(225, 100%, 94%)',
@@ -34,9 +37,9 @@
 </head>
 <body>
 <!--background container-->
-<div class="flex items-center justify-center min-h-screen bg-mobile-pattern bg-no-repeat bg-pale-blue">
+<div class="flex items-center justify-center min-h-screen bg-mobile-pattern bg-no-repeat bg-pale-blue mobile:bg-desktop-pattern">
   <!--  card container  -->
-  <div class="mx-6 rounded-3xl bg-desaturated-blue shadow-2xl shadow-desaturated-blue/40">
+  <div class="mx-6 max-w-sm rounded-3xl bg-desaturated-blue shadow-2xl shadow-desaturated-blue/40">
     <!-- banner -->
     <img class="block rounded-t-3xl" src="images/illustration-hero.svg" alt="illustration"/>
     <!-- content -->
