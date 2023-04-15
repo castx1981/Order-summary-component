@@ -7,51 +7,25 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
   <title>Frontend Mentor | Order summary card</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        fontFamily: {
-          'sans': ['"Red Hat Display"', 'sans-serif']
-        },
-        screens: {
-          'mobile': '375px',
-        },
-        extend: {
-          colors: {
-            'pale-blue': 'hsl(225, 100%, 94%)',
-            'bright-blue': 'hsl(245, 75%, 52%)',
-            'very-pale-blue': 'hsl(225, 100%, 98%)',
-            'desaturated-blue': 'hsl(224, 23%, 55%)',
-            'dark-blue': 'hsl(223, 47%, 23%)',
-          },
-          backgroundImage: {
-            'mobile-pattern': "url('images/pattern-background-mobile.svg')",
-            'desktop-pattern': "url('images/pattern-background-desktop.svg')",
-          }
-        }
-      }
-    }
-  </script>
 </head>
 <body>
 <!--background container-->
-<div class="flex items-center justify-center min-h-screen bg-mobile-pattern bg-no-repeat bg-pale-blue
-            mobile:bg-desktop-pattern">
+<div class="flex items-center justify-center min-h-screen bg-mobile-pattern mobile:bg-desktop-pattern bg-no-repeat bg-pale-blue">
   <!--  card container  -->
-  <div class="mx-6 max-w-sm rounded-3xl bg-desaturated-blue shadow-2xl shadow-desaturated-blue/40">
+  <div class="flex flex-col mx-6 sm:mx-auto w-[375px] sm:w-[450px] bg-desaturated-blue rounded-3xl shadow-2xl shadow-desaturated-blue/40">
     <!-- banner -->
-    <img class="block rounded-t-3xl" src="images/illustration-hero.svg" alt="illustration"/>
+    <img class="rounded-t-3xl" src="images/illustration-hero.svg" alt="illustration"/>
     <!-- content -->
-    <div class="px-4 py-8 space-y-6 font-sans bg-very-pale-blue rounded-b-3xl">
+    <div class="px-4 sm:px-12 py-8 space-y-6 bg-very-pale-blue rounded-b-3xl">
       <h1 class="font-black text-xl text-dark-blue text-center">Order Summary</h1>
       <p class="px-2 font-normal text-base text-desaturated-blue text-center leading-relaxed tracking-wide">
         You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
       </p>
       <div class="p-4 flex items-center bg-pale-blue/30 rounded-lg text-sm font-black">
         <div class="flex-none rounded-full">
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+          <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg">
             <g fill="none" fill-rule="evenodd">
               <circle cx="24" cy="24" r="24" fill="#DFE6FB"/>
               <path fill="#717FA6" fill-rule="nonzero"
@@ -63,14 +37,11 @@
           <p>Annual Plan</p>
           <p class="text-desaturated-blue">$59.99/year</p>
         </div>
-        <a class="flex-none block text-bright-blue underline
-                  hover:no-underline hover:text-bright-blue/50 transition" href="#">
-          Change
-        </a>
+        <a class="flex-none block text-bright-blue underline transition hover:no-underline hover:text-bright-blue/50 " href="#">Change</a>
       </div>
-      <button class="block w-full py-3 bg-bright-blue text-very-pale-blue font-bold tracking-wide rounded-xl
-                     shadow-xl shadow-bright-blue/30
-                     hover:bg-bright-blue/80 transition-colors" type="button">
+      <button class="block w-full py-3 bg-bright-blue font-bold text-very-pale-blue tracking-wide rounded-xl
+                     transition-colors shadow-xl shadow-bright-blue/30hover:bg-bright-blue/80"
+              type="button">
         Proceed to Payment
       </button>
       <div class="text-center">
