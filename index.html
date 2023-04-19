@@ -11,15 +11,17 @@
   <title>Frontend Mentor | Order summary card</title>
 </head>
 <body>
-  <!--background container-->
-  <div class="flex items-center justify-center min-h-screen bg-mobile-pattern mobile:bg-desktop-pattern bg-no-repeat bg-pale-blue">
-    <!--  card container  -->
-    <div class="flex flex-col mx-6 sm:mx-auto w-[375px] sm:w-[450px] bg-desaturated-blue rounded-3xl shadow-2xl shadow-desaturated-blue/40">
-      <!-- banner -->
+  <!-- Global Container -->
+  <div class="flex items-center justify-center min-h-screen bg-mobile-pattern sm:bg-desktop-pattern bg-no-repeat bg-pale-blue">
+    <!-- Card Container  -->
+    <div class="flex flex-col m-6 sm:w-[450px] bg-desaturated-blue rounded-3xl shadow-2xl shadow-desaturated-blue/40">
+      <!-- Banner -->
       <img class="rounded-t-3xl" src="images/illustration-hero.svg" alt="illustration"/>
-      <!-- content -->
-      <div class="px-4 sm:px-12 py-8 space-y-6 bg-very-pale-blue rounded-b-3xl">
-        <h1 class="font-black text-xl text-dark-blue text-center">Order Summary</h1>
+      <!-- Content Container -->
+      <div class="flex flex-col px-4 sm:px-12 py-8 space-y-6 bg-very-pale-blue rounded-b-3xl">
+        <h1 class="font-black text-xl text-dark-blue text-center">
+          Order Summary
+        </h1>
         <p class="px-2 font-normal text-base text-desaturated-blue text-center leading-relaxed tracking-wide">
           You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
         </p>
@@ -40,13 +42,13 @@
           <a class="flex-none block text-bright-blue underline transition hover:no-underline hover:text-bright-blue/50 " href="#">Change</a>
         </div>
         <button class="block w-full py-3 bg-bright-blue font-bold text-very-pale-blue tracking-wide rounded-xl
-                       transition-colors shadow-xl shadow-bright-blue/30hover:bg-bright-blue/80"
+                       transition-colors shadow-xl shadow-bright-blue/30 hover:bg-bright-blue/80"
                 type="button">
           Proceed to Payment
         </button>
-        <div class="text-center">
-          <a class="font-black text-center text-desaturated-blue hover:text-dark-blue" href="#">Cancel Order</a>
-        </div>
+        <a class="font-black text-center text-desaturated-blue hover:text-dark-blue" href="#">
+          Cancel Order
+        </a>
       </div>
     </div>
   </div>
