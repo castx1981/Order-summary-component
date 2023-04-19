@@ -11,44 +11,44 @@
   <title>Frontend Mentor | Order summary card</title>
 </head>
 <body>
-<!--background container-->
-<div class="flex items-center justify-center min-h-screen bg-mobile-pattern mobile:bg-desktop-pattern bg-no-repeat bg-pale-blue">
-  <!--  card container  -->
-  <div class="flex flex-col mx-6 sm:mx-auto w-[375px] sm:w-[450px] bg-desaturated-blue rounded-3xl shadow-2xl shadow-desaturated-blue/40">
-    <!-- banner -->
-    <img class="rounded-t-3xl" src="images/illustration-hero.svg" alt="illustration"/>
-    <!-- content -->
-    <div class="px-4 sm:px-12 py-8 space-y-6 bg-very-pale-blue rounded-b-3xl">
-      <h1 class="font-black text-xl text-dark-blue text-center">Order Summary</h1>
-      <p class="px-2 font-normal text-base text-desaturated-blue text-center leading-relaxed tracking-wide">
-        You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
-      </p>
-      <div class="p-4 flex items-center bg-pale-blue/30 rounded-lg text-sm font-black">
-        <div class="flex-none rounded-full">
-          <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg">
-            <g fill="none" fill-rule="evenodd">
-              <circle cx="24" cy="24" r="24" fill="#DFE6FB"/>
-              <path fill="#717FA6" fill-rule="nonzero"
-                    d="M32.574 15.198a.81.81 0 00-.646-.19L20.581 16.63a.81.81 0 00-.696.803V26.934a3.232 3.232 0 00-1.632-.44A3.257 3.257 0 0015 29.747 3.257 3.257 0 0018.253 33a3.257 3.257 0 003.253-3.253v-8.37l9.726-1.39v5.327a3.232 3.232 0 00-1.631-.441 3.257 3.257 0 00-3.254 3.253 3.257 3.257 0 003.254 3.253 3.257 3.257 0 003.253-3.253V15.81a.81.81 0 00-.28-.613z"/>
-            </g>
-          </svg>
+  <!--background container-->
+  <div class="flex items-center justify-center min-h-screen bg-mobile-pattern mobile:bg-desktop-pattern bg-no-repeat bg-pale-blue">
+    <!--  card container  -->
+    <div class="flex flex-col mx-6 sm:mx-auto w-[375px] sm:w-[450px] bg-desaturated-blue rounded-3xl shadow-2xl shadow-desaturated-blue/40">
+      <!-- banner -->
+      <img class="rounded-t-3xl" src="images/illustration-hero.svg" alt="illustration"/>
+      <!-- content -->
+      <div class="px-4 sm:px-12 py-8 space-y-6 bg-very-pale-blue rounded-b-3xl">
+        <h1 class="font-black text-xl text-dark-blue text-center">Order Summary</h1>
+        <p class="px-2 font-normal text-base text-desaturated-blue text-center leading-relaxed tracking-wide">
+          You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+        </p>
+        <div class="p-4 flex items-center bg-pale-blue/30 rounded-lg text-sm font-black">
+          <div class="flex-none rounded-full">
+            <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <circle cx="24" cy="24" r="24" fill="#DFE6FB"/>
+                <path fill="#717FA6" fill-rule="nonzero"
+                      d="M32.574 15.198a.81.81 0 00-.646-.19L20.581 16.63a.81.81 0 00-.696.803V26.934a3.232 3.232 0 00-1.632-.44A3.257 3.257 0 0015 29.747 3.257 3.257 0 0018.253 33a3.257 3.257 0 003.253-3.253v-8.37l9.726-1.39v5.327a3.232 3.232 0 00-1.631-.441 3.257 3.257 0 00-3.254 3.253 3.257 3.257 0 003.254 3.253 3.257 3.257 0 003.253-3.253V15.81a.81.81 0 00-.28-.613z"/>
+              </g>
+            </svg>
+          </div>
+          <div class="flex-auto pl-5">
+            <p>Annual Plan</p>
+            <p class="text-desaturated-blue">$59.99/year</p>
+          </div>
+          <a class="flex-none block text-bright-blue underline transition hover:no-underline hover:text-bright-blue/50 " href="#">Change</a>
         </div>
-        <div class="flex-auto pl-5">
-          <p>Annual Plan</p>
-          <p class="text-desaturated-blue">$59.99/year</p>
+        <button class="block w-full py-3 bg-bright-blue font-bold text-very-pale-blue tracking-wide rounded-xl
+                       transition-colors shadow-xl shadow-bright-blue/30hover:bg-bright-blue/80"
+                type="button">
+          Proceed to Payment
+        </button>
+        <div class="text-center">
+          <a class="font-black text-center text-desaturated-blue hover:text-dark-blue" href="#">Cancel Order</a>
         </div>
-        <a class="flex-none block text-bright-blue underline transition hover:no-underline hover:text-bright-blue/50 " href="#">Change</a>
-      </div>
-      <button class="block w-full py-3 bg-bright-blue font-bold text-very-pale-blue tracking-wide rounded-xl
-                     transition-colors shadow-xl shadow-bright-blue/30hover:bg-bright-blue/80"
-              type="button">
-        Proceed to Payment
-      </button>
-      <div class="text-center">
-        <a class="font-black text-center text-desaturated-blue hover:text-dark-blue" href="#">Cancel Order</a>
       </div>
     </div>
   </div>
-</div>
 </body>
 </html>

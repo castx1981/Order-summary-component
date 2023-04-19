@@ -1,11 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.{html,js}"],
+  content: ["./index.html"],
   theme: {
-    fontFamily: {
-      'sans': ['"Red Hat Display"', 'sans-serif']
-    },
     extend: {
+      fontFamily: {
+        'sans': ['"Red Hat Display"', 'sans-serif']
+      },
       colors: {
         'pale-blue': 'hsl(225, 100%, 94%)',
         'bright-blue': 'hsl(245, 75%, 52%)',
