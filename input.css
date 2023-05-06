@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-global {
+    background-image: url("images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: hsl(225, 100%, 94%);
+}
+
+@media (min-width: 376px) {
+    .bg-global {
+        background-image: url("images/pattern-background-desktop.svg");
+    }
+}

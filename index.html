@@ -12,41 +12,44 @@
 </head>
 <body>
   <!-- Global Container -->
-  <div class="flex items-center justify-center min-h-screen bg-mobile-pattern sm:bg-desktop-pattern bg-no-repeat bg-pale-blue">
+  <div class="flex items-center justify-center min-h-screen bg-global">
     <!-- Card Container  -->
-    <div class="flex flex-col m-6 sm:w-[450px] bg-desaturated-blue rounded-3xl shadow-2xl shadow-desaturated-blue/40">
-      <!-- Banner -->
-      <img class="rounded-t-3xl" src="images/illustration-hero.svg" alt="illustration"/>
-      <!-- Content Container -->
-      <div class="flex flex-col px-4 sm:px-12 py-8 space-y-6 bg-very-pale-blue rounded-b-3xl">
-        <h1 class="font-black text-xl text-dark-blue text-center">
+    <div class="max-w-[327px] flex flex-col shadow-veryDarkBlue/[.15] sm:max-w-[450px]">
+      <!-- Banner Area -->
+      <div>
+        <img class="rounded-t-2xl" src="images/illustration-hero.svg" alt="illustration"/>
+      </div>
+      <!-- Content Area -->
+      <div class="flex flex-col px-6 py-8 bg-white rounded-b-2xl sm:p-12">
+        <h1 class="font-black text-2xl text-darkBlue text-center">
           Order Summary
         </h1>
-        <p class="px-2 font-normal text-base text-desaturated-blue text-center leading-relaxed tracking-wide">
+        <p class="mt-4 font-medium text-[15px]/[25px] text-desaturatedBlue text-center sm:text-base/[26px]">
           You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
         </p>
-        <div class="p-4 flex items-center bg-pale-blue/30 rounded-lg text-sm font-black">
+        <!-- Price -->
+        <div class="mt-6 p-4 flex items-center bg-paleBlue rounded-xl sm:mt-5 sm:p-6">
           <div class="flex-none rounded-full">
-            <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg">
-              <g fill="none" fill-rule="evenodd">
-                <circle cx="24" cy="24" r="24" fill="#DFE6FB"/>
-                <path fill="#717FA6" fill-rule="nonzero"
-                      d="M32.574 15.198a.81.81 0 00-.646-.19L20.581 16.63a.81.81 0 00-.696.803V26.934a3.232 3.232 0 00-1.632-.44A3.257 3.257 0 0015 29.747 3.257 3.257 0 0018.253 33a3.257 3.257 0 003.253-3.253v-8.37l9.726-1.39v5.327a3.232 3.232 0 00-1.631-.441 3.257 3.257 0 00-3.254 3.253 3.257 3.257 0 003.254 3.253 3.257 3.257 0 003.253-3.253V15.81a.81.81 0 00-.28-.613z"/>
-              </g>
-            </svg>
+            <img src="images/icon-music.svg" alt="">
           </div>
-          <div class="flex-auto pl-5">
-            <p>Annual Plan</p>
-            <p class="text-desaturated-blue">$59.99/year</p>
+          <div class="flex-auto pl-5 text-sm">
+            <p class="font-black text-darkBlue">Annual Plan</p>
+            <p class="font-medium text-desaturatedBlue">$59.99/year</p>
           </div>
-          <a class="flex-none block text-bright-blue underline transition hover:no-underline hover:text-bright-blue/50 " href="#">Change</a>
+          <a class="flex-none text-sm text-brightBlue underline transition-colors hover:no-underline hover:text-brightPurple"
+             href="#">
+            Change
+          </a>
         </div>
-        <button class="block w-full py-3 bg-bright-blue font-bold text-very-pale-blue tracking-wide rounded-xl
-                       transition-colors shadow-xl shadow-bright-blue/30 hover:bg-bright-blue/80"
+        <!-- Payment Button -->
+        <button class="mt-6 block w-full py-3.5 bg-brightBlue shadow-xl shadow-brightBlue/20 sm:mt-8
+                       font-bold text-sm text-white rounded-xl transition-colors hover:bg-brightPurple"
                 type="button">
           Proceed to Payment
         </button>
-        <a class="font-black text-center text-desaturated-blue hover:text-dark-blue" href="#">
+        <!-- Cancel Link -->
+        <a class="mt-6 inline-block self-center font-black text-sm text-desaturatedBlue sm:mt-8 hover:text-darkBlue"
+           href="#">
           Cancel Order
         </a>
       </div>

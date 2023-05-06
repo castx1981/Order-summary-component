@@ -7,18 +7,14 @@ module.exports = {
         'sans': ['"Red Hat Display"', 'sans-serif']
       },
       colors: {
-        'pale-blue': 'hsl(225, 100%, 94%)',
-        'bright-blue': 'hsl(245, 75%, 52%)',
-        'very-pale-blue': 'hsl(225, 100%, 98%)',
-        'desaturated-blue': 'hsl(224, 23%, 55%)',
-        'dark-blue': 'hsl(223, 47%, 23%)',
+        'desaturatedBlue': 'hsl(224, 23%, 55%)',
+        'veryDarkBlue': 'hsl(228, 87%, 39%)',
+        'darkBlue': 'hsl(223, 46%, 23%)',
+        'paleBlue': 'hsl(228, 100%, 99%)',
+        'brightBlue': 'hsl(245, 75%, 52%)',
+        'brightPurple': 'hsl(245, 83%, 68%)',
       },
-      backgroundImage: {
-        'mobile-pattern': "url('images/pattern-background-mobile.svg')",
-        'desktop-pattern': "url('images/pattern-background-desktop.svg')",
-      }
     }
   },
   plugins: [],
 }
-
